@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Aurora - Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aktiviteter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="img/GrandHotelllogo.png">
+</head>
+
+<body>
+
+    <nav>
+        <button id="menu-button">
+            <i class="fas fa-bars"></i>
+        </button>
+        <a href="index.html" class="logo-container">
+            <img src="img/GrandHotelllogo.png" alt="hotel-logo" class="hotel-logo">
+        </a>
+
+        <div class="gas"></div>
+
+        <ion-icon name="search-outline" onclick="toggleDropdown('myDropdown1')" class="dropbtn"></ion-icon>
+
+        <div id="myDropdown1" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput1" onkeyup="filterFunction('myInput1', 'myDropdown1')"
+                onkeydown="handleKeyDown(event, 'myInput1', 'myDropdown1')">
+            <a href="index.html" class="block text-purple-700">Hotell</a>
+            <a href="Restaurant.html" class="block text-purple-700">Restaurang</a>
+            <a href="Aktiviteter.html" class="block text-purple-700">Aktiviteter</a>
+            <a href="Erbjudanden.html" class="block text-purple-700">Erbjudanden</a>
+            <a href="Bad.html" class="block text-purple-700">Bad och Spa</a>
+            <a href="About.html" class="block text-purple-700">Om oss</a>
+            <a href="contact.html" class="block text-purple-700">Kontakta oss</a>
+            <a href="bokning.html" class="block text-purple-700">Bokning</a>
+        </div>
+
+        <a href="index.html" class="nav-links">Hotell</a>
+        <a href="Restaurant.html" class="nav-links">Restaurang</a>
+        <a href="Aktiviteter.html" class="nav-links" id="active">Aktiviteter</a>
+        <a href="Erbjudanden.html" class="nav-links">Erbjudanden</a>
+        <a href="Bad.html" class="nav-links">Bad och Spa</a>
+        <a href="About.html" class="nav-links">Om oss</a>
+        <a href="contact.html" class="nav-links">Kontakta oss</a>
+        <a href="bokning.html" class="nav-links">Bokning</a>
+
+    </nav>
+    <div id="mobile-menu">
+        <a href="index.html" class="block text-purple-700">Hotell</a>
+        <a href="Restaurant.html" class="block text-purple-700">Restaurang</a>
+        <a href="Aktiviteter.html" class="block text-purple-700">Aktiviteter</a>
+        <a href="Erbjudanden.html" class="block text-purple-700">Erbjudanden</a>
+        <a href="Bad.html" class="block text-purple-700">Bad och Spa</a>
+        <a href="About.html" class="block text-purple-700">Om oss</a>
+        <a href="contact.html" class="block text-purple-700">Kontakta oss</a>
+        <a href="bokning.html" class="block text-purple-700">Bokning</a>
+    </div>
+
+
+
+
+
+
+
+
+    <header>
+        <h1>Grand Aurora Hotell – Evenemang</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Upplev Magiska Evenemang</h2>
+        <p>Unika middagar, live-musik och oförglömliga kvällar. Boka nu!</p>
+    </section>
+
+    <section class="section count">
+        <h2>Nästa Stora Event</h2>
+        <p id="countdown"></p>
+        <p id="vin"></p>
+        <p id="jazz"></p>
+    </section>
+
+    <section class="section">
+        <h2>Kommande Evenemang</h2>
+        <div class="event">
+            <div class="event-item">
+                <img src="img/vinprovning.jpg" alt="Vinprovning">
+                <h3>Vinprovning</h3>
+                <p>19 April – Upptäck fantastiska viner med vår expert sommelier.</p>
+            </div>
+            <div class="event-item">
+                <img src="img/jazzkvall.jpg" alt="Jazzkväll">
+                <h3>Jazzkväll</h3>
+                <p>23 April – Njut av levande jazzmusik och god mat i en elegant miljö.</p>
+            </div>
+            <div class="event-item">
+                <img src="/img/nyårs.png" alt="Nyårsmiddag">
+                <h3>Nyårsmiddag</h3>
+                <p>31 December – Fira in det nya året med en exklusiv 3-rätters middag och fyrverkerier.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bokning">
+        <h2>Boka ett Evenemang</h2>
+        <form id="booking-form">
+            <input type="text" id="name" placeholder="Ditt Namn" required>
+            <input type="email" id="email" placeholder="Din E-post" required>
+            <select id="event">
+                <option value="Vinprovning">Vinprovning</option>
+                <option value="Jazzkväll">Jazzkväll</option>
+                <option value="Nyårsmiddag">Nyårsmiddag</option>
+            </select>
+            <input type="number" id="guests" placeholder="Antal Gäster" min="1" required>
+            <button type="submit">Boka Nu</button>
+        </form>
+        <p id="confirmation"></p>
+    </section>
+
+
+    <section class="section">
+        <h2>Gästrecensioner</h2>
+        <div id="reviews">
+            <p><strong>Anna K:</strong> "Fantastiskt nyårsfirande! 🥂"</p>
+            <p><strong>Johan L:</strong> "Jazzkvällen var magisk! 🎷"</p>
+            <p><strong>Ulf J:</strong> "The best vine in the world! 🍷"</p>
+        </div>
+        <input type="text" id="name1" placeholder="Ditt namn">
+        <input type="text" id="reviewInput" placeholder="Lämna en recension" required>
+        <button type="button" id="submitReview">Skicka</button>
+    </section>
+
+
+
+    <section class="section">
+        <h2>Galleri – Tidigare Evenemang</h2>
+        <div class="gallery">
+            <img src="/img/event1.png" alt="Event 1">
+            <img src="/img/event2.png" alt="Event 2">
+            <img src="/img/event3.png" alt="Event 3">
+            <img src="/img/event4.png" alt="Event 4">
+        </div>
+    </section>
+
+    <section class="section vip">
+        <h2>Bli en VIP-medlem</h2>
+        <p>Få exklusiva inbjudningar till våra bästa evenemang.</p>
+        <form id="vip">
+            <input type="email" id="vipEmail" placeholder="Din e-post" required>
+            <button type="submit">Gå med</button>
+        </form>
+        <p id="confirmationer"></p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-columns">
+                <div class="footer-group">
+                    <div class="footer-heading footer-1">
+                        <h2>GrandHotel.se</h2>
+                        <span>Hotell & destination</span>
+                        <span>Konferens</span>
+                        <span>Elite Hotels Rewards</span>
+                        <span>Köp presentkort</span>
+                        <span>Restauranger</span>
+                        <span>Explore</span>
+                        <a href="#">Kontaktauppgifter</a>
+                    </div>
+                    <div class="footer-heading footer-2">
+                        <h2>Om oss</h2>
+                        <span>Om oss</span>
+                        <span>Karriär</span>
+                        <span>Press</span>
+                        <span>Hållbarhet & Miljö</span>
+                        <span>Kommande hotell</span>
+                        <span>Kontakta oss</span>
+                    </div>
+                </div>
+                <div class="footer-group">
+                    <div class="footer-heading footer-3">
+                        <h2>Bokning</h2>
+                        <span>Våra Hotellpaket</span>
+                        <span>Hantera din bokning</span>
+                        <span>Villkor & Policys</span>
+                    </div>
+                    <div class="footer-heading footer-4">
+                        <h2>Våra Hotell</h2>
+                        <span>Hotell i Sverige</span>
+                        <span>Hotell i Stockholm</span>
+                        <span>Hotell i Göteborg</span>
+                        <span>Hotell i Helsingborg</span>
+                        <span>Hotell i Lund</span>
+                        <span>Hotell i Malmö</span>
+                        <span>Hotell i Växjö</span>
+                        <span>Hotell i Örebro</span>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h2>NYHETSBREV</h2>
+                <p>Prenumerera på vårt nyhetsbrev fyllt av information och erbjudanden.</p>
+                <button class="Prenumerera">Prenumerera nu</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/event.js"></script>
+</body>
+
+</html>

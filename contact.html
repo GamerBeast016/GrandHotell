@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Aurora - Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="img/GrandHotelllogo.png">
+</head>
+
+<body>
+
+    <nav>
+        <button id="menu-button">
+            <i class="fas fa-bars"></i>
+        </button>
+        <a href="index.html" class="logo-container">
+            <img src="img/GrandHotelllogo.png" alt="hotel-logo" class="hotel-logo">
+        </a>
+
+        <div class="gas"></div>
+
+        <ion-icon name="search-outline" onclick="toggleDropdown('myDropdown1')" class="dropbtn"></ion-icon>
+
+        <div id="myDropdown1" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput1" onkeyup="filterFunction('myInput1', 'myDropdown1')"
+                onkeydown="handleKeyDown(event, 'myInput1', 'myDropdown1')">
+            <a href="index.html" class="block text-purple-700">Hotell</a>
+            <a href="Restaurant.html" class="block text-purple-700">Restaurang</a>
+            <a href="Aktiviteter.html" class="block text-purple-700">Aktiviteter</a>
+            <a href="Erbjudanden.html" class="block text-purple-700">Erbjudanden</a>
+            <a href="Bad.html" class="block text-purple-700">Bad och Spa</a>
+            <a href="About.html" class="block text-purple-700">Om oss</a>
+            <a href="contact.html" class="block text-purple-700">Kontakta oss</a>
+            <a href="bokning.html" class="block text-purple-700">Bokning</a>
+        </div>
+
+        <a href="index.html" class="nav-links">Hotell</a>
+        <a href="Restaurant.html" class="nav-links">Restaurang</a>
+        <a href="Aktiviteter.html" class="nav-links">Aktiviteter</a>
+        <a href="Erbjudanden.html" class="nav-links">Erbjudanden</a>
+        <a href="Bad.html" class="nav-links">Bad och Spa</a>
+        <a href="About.html" class="nav-links">Om oss</a>
+        <a href="contact.html" class="nav-links" id="active">Kontakta oss</a>
+        <a href="bokning.html" class="nav-links">Bokning</a>
+
+    </nav>
+    <div id="mobile-menu">
+        <a href="index.html" class="block text-purple-700">Hotell</a>
+        <a href="Restaurant.html" class="block text-purple-700">Restaurang</a>
+        <a href="Aktiviteter.html" class="block text-purple-700">Aktiviteter</a>
+        <a href="Erbjudanden.html" class="block text-purple-700">Erbjudanden</a>
+        <a href="Bad.html" class="block text-purple-700">Bad och Spa</a>
+        <a href="About.html" class="block text-purple-700">Om oss</a>
+        <a href="contact.html" class="block text-purple-700">Kontakta oss</a>
+        <a href="bokning.html" class="block text-purple-700">Bokning</a>
+    </div>
+
+
+
+
+
+    <header class="contact-header">
+        <h1>Kontakta Oss</h1>
+        <p>Vi finns här för att hjälpa dig – tveka inte att höra av dig!</p>
+    </header>
+
+    <main class="contact-wrapper">
+
+        <section class="contact-info">
+            <h2>Våra Uppgifter</h2>
+            <p><strong>Adress:</strong> Fjällvägen 12, 999 88 Aurora</p>
+            <p><strong>Telefon:</strong> +46 (0)123 456 789</p>
+            <p><strong>E-post:</strong> info@grandaurora.se</p>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Skicka ett Meddelande</h2>
+            <form id="contact-form">
+                <input type="text" id="namn" placeholder="Ditt namn" required>
+                <input type="email" id="epost" placeholder="Din e-postadress" required>
+                <textarea id="meddelande" placeholder="Skriv ditt meddelande här..." required></textarea>
+                <button type="submit">Skicka</button>
+                <p id="bekräftelse"></p>
+            </form>
+        </section>
+
+    </main>
+
+
+
+
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-columns">
+                <div class="footer-group">
+                    <div class="footer-heading footer-1">
+                        <h2>GrandHotel.se</h2>
+                        <span>Hotell & destination</span>
+                        <span>Konferens</span>
+                        <span>Elite Hotels Rewards</span>
+                        <span>Köp presentkort</span>
+                        <span>Restauranger</span>
+                        <span>Explore</span>
+                        <a href="#">Kontaktauppgifter</a>
+                    </div>
+                    <div class="footer-heading footer-2">
+                        <h2>Om oss</h2>
+                        <span>Om oss</span>
+                        <span>Karriär</span>
+                        <span>Press</span>
+                        <span>Hållbarhet & Miljö</span>
+                        <span>Kommande hotell</span>
+                        <span>Kontakta oss</span>
+                    </div>
+                </div>
+                <div class="footer-group">
+                    <div class="footer-heading footer-3">
+                        <h2>Bokning</h2>
+                        <span>Våra Hotellpaket</span>
+                        <span>Hantera din bokning</span>
+                        <span>Villkor & Policys</span>
+                    </div>
+                    <div class="footer-heading footer-4">
+                        <h2>Våra Hotell</h2>
+                        <span>Hotell i Sverige</span>
+                        <span>Hotell i Stockholm</span>
+                        <span>Hotell i Göteborg</span>
+                        <span>Hotell i Helsingborg</span>
+                        <span>Hotell i Lund</span>
+                        <span>Hotell i Malmö</span>
+                        <span>Hotell i Växjö</span>
+                        <span>Hotell i Örebro</span>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h2>NYHETSBREV</h2>
+                <p>Prenumerera på vårt nyhetsbrev fyllt av information och erbjudanden.</p>
+                <button class="Prenumerera">Prenumerera nu</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
