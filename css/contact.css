@@ -1,0 +1,108 @@
+.contact-header {
+    background-color: var(--dark-color);
+    padding: 70px 20px;
+    color: var(--white-color);
+    text-align: center;
+    font-family: --;
+}
+.contact-header h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.contact-wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.contact-info {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.contact-form-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section h2 {
+    margin-top: 0;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+
+}
+
+#bekräftelse {
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: #fff;
+    --dark-color: hsl(222, 24%, 8%);
+    --title-color: hsl(222, 8%, 8%);
+    --text-color-light: hsl(222, 8%, 65%);
+    --white-color: #fff;
+    --body-color: hsl(222, 100%, 99%);
+    --grey-color: hsl(0, 3%, 69%);
+    --nav-color: hsl(0, 11%, 26%);
+
+    --body-font: "Poppins", sans-serif;
+    --small-font-size: .813rem;
+    --big-font-size: 2rem;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --small-font-size: .875rem;
+    }
+}

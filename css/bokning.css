@@ -1,0 +1,101 @@
+body{
+    font-family: s;
+}
+.booking-header {
+    background-color: var(--dark-color);
+    padding: 80px 20px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.booking-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.booking-form-wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.booking-form-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#confirmation-message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: #fff;
+    --dark-color: hsl(222, 24%, 8%);
+    --title-color: hsl(222, 8%, 8%);
+    --text-color-light: hsl(222, 8%, 65%);
+    --white-color: #fff;
+    --body-color: hsl(222, 100%, 99%);
+    --grey-color: hsl(0, 3%, 69%);
+    --nav-color: hsl(0, 11%, 26%);
+
+    --body-font: "Poppins", sans-serif;
+    --small-font-size: .813rem;
+    --big-font-size: 2rem;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --small-font-size: .875rem;
+    }
+}
