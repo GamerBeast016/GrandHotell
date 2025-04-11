@@ -9,7 +9,7 @@ header {
 }
 
 .hero {
-    background: url('/img/hero-event.png') no-repeat center center/cover;
+    background: url('img/hero-event.png') no-repeat center center/cover;
     color: white;
     padding: 180px 20px;
     text-align: center;
