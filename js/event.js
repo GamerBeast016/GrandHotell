@@ -63,6 +63,8 @@ updateCountdown();
 updatevin();
 updatejazz();
 setInterval(updateCountdown, 1000);
+setInterval(updatevin, 1000);
+setInterval(updatejazz, 1000);
 
 document.getElementById('booking-form').addEventListener('submit', function (event) {
     event.preventDefault();
