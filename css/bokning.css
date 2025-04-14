@@ -99,3 +99,31 @@ button:hover {
         --small-font-size: .875rem;
     }
 }
+
+
+
+
+
+
+
+
+#confirmation-message {
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#confirmation-message.success {
+    display: block;
+    background-color: #e0ffe0;
+    color: #2d6a2d;
+}
+
+#confirmation-message.error {
+    display: block;
+    background-color: #ffe0e0;
+    color: #8a1f1f;
+}
