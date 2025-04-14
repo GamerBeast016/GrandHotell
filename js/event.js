@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Clear the form input fields
             document.getElementById('vip').reset();
         } else {
-            console.log("Var vänlig och fyll i en giltig e-postadress.");
+            confirmation.innerText = "Var vänlig och fyll i en giltig e-postadress.";
         }
     });
 });
